@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>-: Scoreboard Game :-</h1>
+    <div class="main">
+      <div id="inputfeild" class="inputfeild">
+        <input class="inputvalue" type="number" value="1" id="inp" />
+        <button class="btnmain" onclick="btnmain()" id="btnmainv">OK</button>
+      </div>
+      <div class="displymain" id="dismain"></div>
+      <div id="players" class="players">
+        <div class="playnow">
+          <div id="playone" class="playone">
+            <div class="playname" id="playnamesty">
+              <h1 id="ple">Player 1</h1>
+              <input
+                placeholder="please put your name"
+                class="inputname"
+                type="text"
+                id="inpname"
+              />
+              <!-- <button onclick="nameoneis()" id="namesave" class="namesave">
+              save
+            </button> -->
+            </div>
+            <div id="namedis" class="namedisp"></div>
+            <div id="playonen" class="playonen">
+              <div class="disply1" id="dis1"></div>
+              <button class="btnpos" onclick="btn1()" id="btn1">+</button>
+              <button class="btnneg" onclick="btn1s()" id="btn1vb">-</button>
+            </div>
+          </div>
+          <div id="playtwo" class="playtwo">
+            <div class="playname" id="playnamestye">
+              <h1 id="ple">Player 2</h1>
+              <input
+                placeholder="please put your name"
+                class="inputname"
+                type="text"
+                id="inpnametwo"
+              />
+              <!-- <button onclick="nametwois()" id="namesave" class="namesave">
+              save
+            </button> -->
+            </div>
+            <div id="nametwodis" class="namedisp"></div>
+            <div id="playtwon" class="playtwon">
+              <div class="disply2" id="dis2"></div>
+              <button class="btnpos" onclick="btn2()" id="btn2">+</button>
+              <button class="btnneg" onclick="btn2s()" id="btn2vb">-</button>
+            </div>
+          </div>
+        </div>
+        <button onclick="nametwois()" id="namesave" class="namesave">
+          save
+        </button>
+      </div>
+
+      <h1 class="result" id="result"></h1>
+      <button class="restart" id="restart">
+        <a href="./index.html">Restart</a>
+      </button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
