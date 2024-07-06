@@ -7,6 +7,9 @@ var playonen = document.getElementById('playonen');
 var dismain;
 var ple = document.getElementById('ple');
 var restart = document.getElementById('restart');
+var playnow = document.getElementById('playnow');
+var main = document.getElementById('main');
+var space = document.getElementById('space-bro');
 function btnmain() {
     inp = input.value;
     dismain = document.getElementById('dismain');
@@ -31,8 +34,9 @@ function btn1() {
     // console.log(inp);
     if (inp == count) {
         // alert('moiz bhi');
-        var playone = nameone + ' is win! GOOD. '
+        var playone = nameone + ' is win! <br>GOOD. '
         result.innerHTML = playone;
+        space.style.display = ('flex');
         var btn1v = document.getElementById('btn1');
         btn1v.setAttribute('disabled', 'true');
         var btn1vb = document.getElementById('btn1vb');
@@ -47,6 +51,9 @@ function btn1() {
         var btn2vb = document.getElementById('btn2vb');
         btn2vb.setAttribute('disabled', 'true');
         restart.style.display = ('inline');
+        playnow.style.display = ('none');
+        dismain.style.display = ('none');
+        main.style.flexDirection = ('row');
     }
 };
 function btn1s() {
@@ -73,6 +80,9 @@ function btn1s() {
         var btn2vb = document.getElementById('btn2vb');
         btn2vb.setAttribute('disabled', 'true');
         restart.style.display = ('inline');
+        playnow.style.display = ('none');
+        dismain.style.display = ('none');
+        main.style.flexDirection = ('row');
     }
 };
 var cont = 0;
@@ -101,6 +111,9 @@ function btn2() {
         var btn1vb = document.getElementById('btn1vb');
         btn1vb.setAttribute('disabled', 'true');
         restart.style.display = ('inline');
+        playnow.style.display = ('none');
+        dismain.style.display = ('none');
+        main.style.flexDirection = ('row');
     }
 };
 function btn2s() {
@@ -127,6 +140,9 @@ function btn2s() {
         var btn1vb = document.getElementById('btn1vb');
         btn1vb.setAttribute('disabled', 'true');
         restart.style.display = ('inline');
+        playnow.style.display = ('none');
+        dismain.style.display = ('none');
+        main.style.flexDirection = ('row');
     }
 }
 var nameone;
@@ -192,3 +208,6 @@ function nametwois() {
     namesave.style.display = ('none');
     ple.style.display = ('none');
 };
+function restartnow() {
+    Screen.apply(restart);
+}

@@ -1,10 +1,13 @@
 body {
+  background-image: url(./b9b78c6a651f6bd2c5872a3d87024a71.jpg);
+  background-size: cover;
   display: flex;
-  background-color: rgb(45 45 45);
+  justify-content: center;
   align-items: center;
-  /* justify-content: space-evenly; */
-  flex-direction: column;
+  /* cursive */
   flex-wrap: wrap;
+  text-align: center;
+  /* min-height: 100vh; */
 }
 h1 {
   text-transform: uppercase;
@@ -13,21 +16,22 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: xx-large;
-  color: blue;
-  color: #c4c4c4;
-  text-shadow: 2px 7px 5px rgba(163, 120, 120, 0.932),
-    0px -4px 10px rgba(255, 255, 255, 0.842);
+  color: rgb(255, 115, 0);
+  color: #000000;
+  text-shadow: 3px 4px 0px rgba(163, 120, 120, 0.932),
+    2px 5px 3px rgba(255, 255, 255, 0.842);
   width: 100%;
+  font-family: cursive;
 }
 .main {
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 900px;
-  height: 450px;
-  padding: 20px;
-  margin-top: 20px;
+  /* width: 900px; */
+  /* height: 450px; */
+  /* padding: 20px; */
+  /* margin-top: 20px; */
   border-radius: 20px;
   flex-direction: column;
 }
@@ -56,22 +60,29 @@ h1 {
   border-radius: 20px;
 }
 .displymain {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   width: 150px;
-  height: 150px;
-  border-radius: 20px;
+  height: 100px;
+  border-radius: 50px;
+  border: 4px dotted black;
   color: black;
   font-weight: bolder;
-  font-size: xx-large;
+  font-size: xxx-large;
   display: none;
   align-items: center;
   justify-content: space-around;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+.displymain:hover{
+  border: 4px solid red;
+  color: red;
 }
 .playnow {
   /* background-color: black; */
   /* height: 400px; */
   display: flex;
-  justify-content: space-around;
+  gap: 50px;
   align-items: center;
   flex-direction: row;
   width: 800px;
@@ -79,32 +90,56 @@ h1 {
   margin-top: 10px;
 }
 .playone {
-  background-color: darkorange;
-  height: 250px;
+  /* background-color: darkorange; */
+  height: 255px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 350px;
+  width: 300px;
   border-radius: 20px;
   margin: 5px;
-  border: 5px solid mediumblue;
+  /* border: 5px solid mediumblue; */
   flex-direction: column;
-  box-shadow: 0px 0px 38px 7px darkorchid;
+  box-shadow: 0px 0px 38px 10px rgb(26, 79, 224);
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: transparent;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 420px;
+  gap: 20px;
+  padding: 30px 40px;
+  color: #000000;
+  backdrop-filter: blur(5px);
 }
 .playtwo {
-  background-color: darkorange;
-  height: 250px;
+  /* background-color: darkorange; */
+  height: 255px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 350px;
+  width: 300px;
   border-radius: 20px;
   margin: 5px;
-  border: 5px solid mediumblue;
+  /* border: 5px solid mediumblue; */
   flex-direction: column;
-  box-shadow: 0px 0px 38px 7px darkorchid;
+  box-shadow: 0px 0px 38px 10px rgb(26, 79, 224);
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: transparent;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  width: 420px;
+  gap: 20px;
+  padding: 30px 40px;
+  color: #000000;
+  backdrop-filter: blur(5px);
 }
 .disply1 {
   background-color: darkkhaki;
@@ -135,7 +170,7 @@ h1 {
   font-size: xx-large;
 }
 .btnpos {
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
   height: 50px;
   display: flex;
   justify-content: space-around;
@@ -147,6 +182,22 @@ h1 {
   color: black;
   font-weight: bolder;
   font-size: xx-large;
+  box-sizing: border-box;
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+}
+.btnpos:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #5a01a7;
+  transition: 0.7s;
+}
+.btnpos:hover {
+  background-color: #002ead;
+  transition: 0.7s;
 }
 .btnneg {
   background-color: darkturquoise;
@@ -161,6 +212,23 @@ h1 {
   font-weight: bolder;
   font-size: xx-large;
   margin: 5px;
+
+  box-sizing: border-box;
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+}
+.btnneg:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #5a01a7;
+  transition: 0.7s;
+}
+.btnneg:hover {
+  background-color: #002ead;
+  transition: 0.7s;
 }
 .result {
   /* background-color: lightgreen; */
@@ -178,9 +246,16 @@ h1 {
   margin: 5px;
 }
 .inputname {
-  width: 200px;
-  height: 30px;
-  border-radius: 20px;
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  padding: 20px 45px 20px 20px;
 }
 .playname {
   display: flex;
@@ -190,8 +265,12 @@ h1 {
   gap: 8px;
 }
 .namesave {
-  background-color: darkturquoise;
-  height: 30px;
+  /* background-image: url(./b9b78c6a651f6bd2c5872a3d87024a71.jpg); */
+  /* background-size: cover; */
+  background-color: transparent;
+  /* background-color: darkturquoise; */
+  height: 60px;
+  width: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -203,9 +282,16 @@ h1 {
   font-size: x-large;
   margin: 25px;
 }
+.namesave:hover {
+  backdrop-filter: blur(5px);
+  transform: scale(1.2);
+  border: 2px solid red;
+  color: red;
+}
 .namedisp {
-  font-size: xx-large;
+  font-size: xxx-large;
   color: black;
+  font-family: fantasy;
 }
 a {
   text-decoration: none;
@@ -238,3 +324,48 @@ a {
   border-radius: 20px;
   margin-top: 10px;
 }
+.space-bro {
+  /* width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  border-radius: 15px;
+  box-sizing: border-box; */
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: transparent;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  border: 1px solid silver;
+  width: 420px;
+  gap: 20px;
+  padding: 30px 40px;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* @media screen and (max-width: 710px) {
+  .head {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 490px) {
+  .head {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 400px) {
+  .head {
+    font-size: x-small;
+  }
+}
+@media screen and (max-width: 294px) {
+  .head {
+    font-size: xx-small;
+  }
+} */
