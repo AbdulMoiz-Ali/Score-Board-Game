@@ -66,6 +66,7 @@ function btn1s() {
         // alert('moiz bhi -')
         var playone = nameone + ' is win! GOOD. '
         result.innerText = playone;
+        space.style.display = ('flex');
         var btn1v = document.getElementById('btn1');
         btn1v.setAttribute('disabled', 'true');
         var btn1vb = document.getElementById('btn1vb');
@@ -97,6 +98,7 @@ function btn2() {
         // alert('moiz bhi one ')
         var playtwo = nametwo + ' is win! GOOD. '
         result.innerText = playtwo;
+        space.style.display = ('flex');
         var btn2v = document.getElementById('btn2');
         btn2v.setAttribute('disabled', 'true');
         var btn2vb = document.getElementById('btn2vb');
@@ -126,6 +128,7 @@ function btn2s() {
         // alert('moiz bhi one -')
         var playtwo = nametwo + ' is win! GOOD. '
         result.innerText = playtwo;
+        space.style.display = ('flex');
         var btn2v = document.getElementById('btn2');
         btn2v.setAttribute('disabled', 'true');
         var btn2vb = document.getElementById('btn2vb');
